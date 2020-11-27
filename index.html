@@ -22,13 +22,15 @@
             <div class="intro-wrapper">
                 <div class="nav-wrapper">
                     <div class="dots-wrapper">
-                        <div class="browser-dot" id="dot-1"></div>
+                        <div class="browser-dot" id="dot-1"><a href="#navigation"></a></div>
                         <div class="browser-dot" id="dot-2"></div>
                         <div class="browser-dot" id="dot-3"></div>
                     </div>
 
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#me">About</a></li>
+                        <li><a href="#skills-head">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
                     </ul>
                 </div>
 <!--end of Navigation-->
@@ -44,7 +46,7 @@
                         <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="settings-note">
-                        *Theme settings will be saved for<br>your next visit
+                        *choose a color theme of your preference<br>your next visit
                     </p>
                 </div>
                 
@@ -54,7 +56,7 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I do</h3>
-                            <p>I'm a self taugh front end developer,
+                            <p>I'm a self taught front end developer,
                                 learning my way to being a useful programmer.
                             </p>
                             <div id="corner-br" class="corner"></div>
@@ -73,7 +75,7 @@
 <!--About me-->            
             <div class="about-wrapper">
                 <div class="about-me">
-                    <h4>More about me</h4>
+                    <h4 id="me">More about me</h4>
                     <p>I'm an International Relations graduate and a self taught Web Developer.
                         My most recent occupation was a customer care agent at the Compensation Fund of the Deparment of Labour.
                     <a href="resume.pdf" target="_blank">Download Resume</a>
@@ -84,7 +86,7 @@
                 
                 <hr>
     <!--skills-->
-            <h4>Skills</h4>
+            <h4 id="skills-head" >Skills</h4>
             <p>HTML 5 with a primary focus on Responsive Web Designs</p>
             <p>I've taught myself Web Development at home while I was job hunting
                 through various resourses, most notiably <a href="https://www.freecodecamp.org/boitumelo-sempe" target="_blank">freeCodeCamp</a>.  
@@ -119,9 +121,14 @@
                 <div class="social-links">
                     <img id="social_img" src="images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg" alt="">
                     <h3>Find me on GitHub & Twitter</h3>
-                    <a href="https://github.com/ShakexSempe">GitHub</a>
+                    <div class="social-icons">
+                    <a href="https://github.com/ShakexSempe" target="_blank">
+                        <img src="images/icons8-github-64.png" alt="">
+                    </a>
                     <br>
-                    <a href="https://twitter.com/Shake_x11" target="_blank">Twitter</a>
+                    <a href="https://twitter.com/Shake_x11" target="_blank">
+                        <img src="images/icons8-twitter-64.png" alt="">
+                    </a></div>
                 </div>
             </div>
         </div>
@@ -132,7 +139,7 @@
 <!--projects-->
     <section class="s1">
         <div class="main-container">
-            <h3 style="text-align: center;" >My Projects</h3>
+            <h3 id="projects" style="text-align: center;" >My Projects</h3>
             <div class="post-wrapper"> <!--container for posts..each post in its own div/wrapper-->
                 <div> <!--this div solves height differences of the 3 project posts-->
                     <div class="post">
@@ -200,6 +207,17 @@
 <!--end of form-->
 
 <!--end of bottom section-->
+<!--Footer-->
+<section id="footer" class="s1">
+    <div class="main-container">
+        <div class="brand">
+            <p><span>S</span>hakex<span>S</span>empe 2020</p>
+        </div>
+    </div>
+</section>
+
+
+<!--end of Footer-->
 <script src="main.js" type="text/javascript"></script>
 </body>
 </html>

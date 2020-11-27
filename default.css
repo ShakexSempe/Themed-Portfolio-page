@@ -19,9 +19,12 @@ html,
 body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+
 }
 body *{
     transition: 0.3s;
+    
 }
 
 h1,
@@ -301,6 +304,14 @@ h6 {
     text-align: center;
 
 }
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons a{
+    margin: 0 30px
+}
 #social_img{
     width: 100%;
 }
@@ -384,6 +395,19 @@ h6 {
 }
 /*end of form*/
 
+/*footer*/
+#footer .main-container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-around;
+}
+#footer .social-icon{
+    display: flex;
+}
+
+/*end of footer*/
 /*Media query*/
 @media screen and (max-width: 1200px) {
     .main-container {
@@ -402,6 +426,10 @@ h6 {
             'left-column' 
             'right-column'
             ; 
+    }
+    #navigation a{
+
+        font-size: 0.7rem;
     }
     .main-container h4{
         text-align: center;
